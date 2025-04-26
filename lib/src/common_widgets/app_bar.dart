@@ -3,6 +3,8 @@ import 'package:flutter_tindeq/src/common_widgets/test_menu.dart';
 import 'package:flutter_tindeq/src/routing/app_router.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../main.dart';
+
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({super.key, required this.title});
   final String title;
@@ -11,6 +13,7 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: Text(title),
+      backgroundColor: backColor,
       actions: <Widget>[
         TextButton(
           onPressed: () {

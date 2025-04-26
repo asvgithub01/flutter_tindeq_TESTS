@@ -5,6 +5,8 @@ import 'package:flutter_tindeq/src/routing/app_router.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_tindeq/src/localization/string_hardcoded.dart';
 
+import '../../main.dart';
+
 class NavigationRailWidget extends StatefulWidget {
   const NavigationRailWidget({super.key});
 
@@ -23,6 +25,7 @@ class _NavigationRailWidgetState extends State<NavigationRailWidget> {
   @override
   Widget build(BuildContext context) {
     return NavigationRail(
+      backgroundColor: backColor,
       selectedIndex: _selectedIndex,
       groupAlignment: groupAlignment,
       unselectedLabelTextStyle: TextStyles.unselectedText,

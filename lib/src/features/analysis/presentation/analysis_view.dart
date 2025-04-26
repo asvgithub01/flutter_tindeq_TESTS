@@ -10,6 +10,8 @@ import 'package:flutter_tindeq/src/features/testing/presentation/test_widgets.da
 import 'package:flutter_tindeq/src/features/testing/repository/test_results_provider.dart';
 import 'package:flutter_tindeq/src/features/user_details/domain/user.dart';
 
+import '../../../../main.dart';
+
 class AnalysisView extends StatefulWidget {
   const AnalysisView({super.key});
 
@@ -20,10 +22,11 @@ class AnalysisView extends StatefulWidget {
 class _AnalysisViewState extends State<AnalysisView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return const  Scaffold(
       // appBar: PreferredSize(
       //     preferredSize: Size.fromHeight(80.0),
       //     child: AppBarWidget(title: "User Details")),
+      backgroundColor: backColor,
       body: SafeArea(
         child: Row(
           children: <Widget>[

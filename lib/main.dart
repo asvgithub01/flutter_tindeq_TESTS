@@ -9,7 +9,7 @@ import 'package:flutter_tindeq/src/localization/string_hardcoded.dart';
 import 'src/app.dart';
 import 'src/settings/settings_controller.dart';
 import 'src/settings/settings_service.dart';
-
+const Color backColor= Colors.black;
 void main() async {
   debugPaintSizeEnabled = false;
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +24,7 @@ void main() async {
   // Load the user's preferred theme while the splash screen is displayed.
   // This prevents a sudden theme change when the app is first displayed.
   await settingsController.loadSettings();
-  await (SoundHelper.loadSounds());
+  // await (SoundHelper.loadSounds());
 
   // Run the app and pass in the SettingsController. The app listens to the
   // SettingsController for changes, then passes it further down to the

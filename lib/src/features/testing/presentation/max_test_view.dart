@@ -11,6 +11,8 @@ import 'package:flutter_tindeq/src/features/testing/repository/data.dart';
 import 'package:flutter_tindeq/src/features/testing/repository/test_results_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../../../main.dart';
+
 //TODO add ability to do mulitple tests for different grip types - maybe a separate grip tests menu item?
 //TODO calculate max strength based on average of 3 reps of 10 seconds
 class MaxTestingView extends HookWidget {
@@ -22,6 +24,7 @@ class MaxTestingView extends HookWidget {
       // appBar: const PreferredSize(
       //     preferredSize: Size.fromHeight(80.0),
       //     child: AppBarWidget(title: "The Tests!")),
+      backgroundColor: backColor,
       body: SafeArea(
         child: Row(
           children: <Widget>[

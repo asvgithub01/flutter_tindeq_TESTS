@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tindeq/src/common_widgets/app_bar.dart';
 
+import '../../main.dart';
 import 'settings_controller.dart';
 
 /// Displays the various settings that can be customized by the user.
@@ -20,6 +21,7 @@ class SettingsView extends StatelessWidget {
       appBar: const PreferredSize(
           preferredSize: Size.fromHeight(80.0),
           child: AppBarWidget(title: "Settings!")),
+      backgroundColor: backColor,
       body: Padding(
         padding: const EdgeInsets.all(16),
         // Glue the SettingsController to the theme selection DropdownButton.

@@ -10,6 +10,8 @@ import 'package:flutter_tindeq/src/features/testing/repository/test_results_prov
 import 'package:flutter_tindeq/src/features/testing/repository/data.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../../../main.dart';
+
 class CftTestingView extends HookConsumerWidget {
   const CftTestingView({super.key});
 
@@ -21,6 +23,7 @@ class CftTestingView extends HookConsumerWidget {
       // appBar: const PreferredSize(
       //     preferredSize: Size.fromHeight(80.0),
       //     child: AppBarWidget(title: "The Tests!")),
+        backgroundColor: backColor,
       body: SafeArea(
         child: Row(
           children: <Widget>[

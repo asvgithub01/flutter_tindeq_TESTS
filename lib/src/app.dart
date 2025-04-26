@@ -51,9 +51,10 @@ class _MyAppState extends State<MyApp> {
           // preferred ThemeMode (light, dark, or system default) from the
           // SettingsController to display the correct theme.
           theme: ThemeData(),
+          color: Colors.redAccent,
           darkTheme: ThemeData.dark(),
           // themeMode: ThemeMode.light,
-          themeMode: widget.settingsController.themeMode,
+          // themeMode: widget.settingsController.themeMode,
           // Remove the debug banner
           debugShowCheckedModeBanner: false,
         );

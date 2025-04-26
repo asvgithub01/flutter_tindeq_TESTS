@@ -14,6 +14,8 @@ import 'package:flutter_tindeq/src/features/tindeq/tindeq_provider.dart';
 import 'package:flutter_tindeq/src/features/user_details/domain/user.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../../../main.dart';
+
 //TODO this needs to have a better name
 class TestingView extends StatelessWidget {
   const TestingView({
@@ -27,6 +29,7 @@ class TestingView extends StatelessWidget {
       // appBar: const PreferredSize(
       //     preferredSize: Size.fromHeight(80.0),
       //     child: AppBarWidget(title: "The Tests!")),
+      backgroundColor: backColor,
       body: SafeArea(
         child: Row(
           children: <Widget>[

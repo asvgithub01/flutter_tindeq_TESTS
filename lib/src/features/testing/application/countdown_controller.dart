@@ -93,14 +93,14 @@ class Rep extends _$Rep {
     if (isInCountdown(timerState, countdown, testTimes) ||
         isInHang(timerState, countdown, repValue, testTimes) ||
         isInRest(timerState, countdown, repValue, testTimes)) {
-      playBeeps(currentCountdown.value);
+      // playBeeps(currentCountdown.value);
     }
     if ((timerState.value == TimerState.complete) && startTimer) {
       timerState.value = TimerState.idle;
       currentCountdown.value = testTimes.countdownTime;
     } else if ((timerState.value == TimerState.idle)) {
-      SoundHelper.playWhistle();
-      SoundHelper.playGetReady();
+      // SoundHelper.playWhistle();
+      // SoundHelper.playGetReady();
       timerState.value = TimerState.countdown;
       currentCountdown.value = testTimes.countdownTime;
     } else if (isStartCountdown(timerState, countdown, testTimes)) {
@@ -120,12 +120,12 @@ class Rep extends _$Rep {
           .read(currentTestProvider.notifier)
           .setTest(currentTestState.$1, TestState.complete));
     } else if (isStartHang(timerState, countdown, repValue, testTimes)) {
-      SoundHelper.playHang();
+      // SoundHelper.playHang();
       timerState.value = TimerState.hang;
       currentCountdown.value = testTimes.hangTime;
       Future(() => ref.read(repProvider.notifier).inc());
     } else if (isStartRest(timerState, countdown, repValue, testTimes)) {
-      SoundHelper.playRest();
+      // SoundHelper.playRest();
       timerState.value = TimerState.rest;
       currentCountdown.value = testTimes.restTime;
     }

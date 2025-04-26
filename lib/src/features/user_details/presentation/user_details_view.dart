@@ -5,6 +5,8 @@ import 'package:flutter_tindeq/src/constants/breakpoints.dart';
 import 'package:flutter_tindeq/src/features/user_details/domain/user.dart';
 import 'package:flutter_tindeq/src/localization/string_hardcoded.dart';
 
+import '../../../../main.dart';
+
 class UserDetailsView extends StatefulWidget {
   const UserDetailsView({super.key});
 
@@ -15,10 +17,11 @@ class UserDetailsView extends StatefulWidget {
 class _UserDetailsViewState extends State<UserDetailsView> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  const Scaffold(
       // appBar: PreferredSize(
       //     preferredSize: Size.fromHeight(80.0),
       //     child: AppBarWidget(title: "User Details")),
+      backgroundColor: backColor,
       body: SafeArea(
         child: Row(
           children: <Widget>[

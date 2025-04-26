@@ -12,6 +12,8 @@ import 'package:flutter_tindeq/src/features/testing/repository/data.dart';
 import 'package:flutter_tindeq/src/features/testing/repository/test_results_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../../../main.dart';
+
 class RfdTestingView extends HookWidget {
   const RfdTestingView({super.key});
   final value = "0.0";
@@ -22,6 +24,7 @@ class RfdTestingView extends HookWidget {
       // appBar: const PreferredSize(
       //     preferredSize: Size.fromHeight(80.0),
       //     child: AppBarWidget(title: "The Tests!")),
+      backgroundColor: backColor,
       body: SafeArea(
         child: Row(
           children: <Widget>[

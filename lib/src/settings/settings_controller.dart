@@ -38,7 +38,7 @@ class SettingsController with ChangeNotifier {
     if (newThemeMode == _themeMode) return;
 
     // Otherwise, store the new ThemeMode in memory
-    _themeMode = newThemeMode;
+    // _themeMode = newThemeMode;
 
     // Important! Inform listeners a change has occurred.
     notifyListeners();
